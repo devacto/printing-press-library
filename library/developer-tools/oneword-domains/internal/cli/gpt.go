@@ -17,6 +17,6 @@ func newGptCmd(flags *rootFlags) *cobra.Command {
 
 	cmd.AddCommand(newGptSavesCmd(flags))
 	cmd.AddCommand(newGptUsageCmd(flags))
-	addNovelCommandIfAbsent(cmd, newNovelGptGenerateCmd(flags))
+	cmd.AddCommand(newNovelGptGenerateCmd(flags))
 	return cmd
 }

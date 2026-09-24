@@ -882,3 +882,17 @@ func TestOwdGenerateNoRedirectAndBoundedErrorBody(t *testing.T) {
 		t.Fatalf("no override falls back to the site: %s", owdGenerateURL())
 	}
 }
+
+func TestOwdSplitDomainMultiLabelTLD(t *testing.T) {
+	for in, want := range map[string][2]string{"smart.co.uk": {"smart", "co.uk"}, "open.com.au": {"open", "com.au"}, "sm.art": {"sm", "art"}, "Smart.COM": {"smart", "com"}} {
+		w, tld, err := owdSplitDomain(in)
+		if err != nil || w != want[0] || tld != want[1] {
+			t.Fatalf("owdSplitDomain(%q) = %q, %q, %v; want %q, %q", in, w, tld, err, want[0], want[1])
+		}
+	}
+	for _, bad := range []string{"smart", ".com", "smart."} {
+		if _, _, err := owdSplitDomain(bad); err == nil {
+			t.Fatalf("owdSplitDomain(%q) accepted an invalid domain", bad)
+		}
+	}
+}

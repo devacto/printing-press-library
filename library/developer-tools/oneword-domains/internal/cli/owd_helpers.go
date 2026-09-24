@@ -177,7 +177,9 @@ func owdNormTLD(s string) string {
 // owdSplitDomain splits "smart.com" into ("smart", "com").
 func owdSplitDomain(d string) (string, string, error) {
 	d = strings.ToLower(strings.TrimSpace(d))
-	i := strings.LastIndex(d, ".")
+	// Words never contain dots, so the TLD is everything after the first dot;
+	// this keeps multi-label TLDs such as co.uk and com.au intact.
+	i := strings.Index(d, ".")
 	if i <= 0 || i == len(d)-1 {
 		return "", "", fmt.Errorf("%q is not a word.tld domain", d)
 	}

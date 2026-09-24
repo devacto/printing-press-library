@@ -11,7 +11,7 @@
   "auth_context": {
     "type": "cookie"
   },
-  "source_fingerprint": "563d1d1a0e5146073172efe4d8a03ea2c54b3091090d8716b5618c29cc5c80ee",
+  "source_fingerprint": "ea1f7ac7cf092a29c184ac75284ee1d137618a01ddb6f402890381af0a2b8253",
   "source_files": {
     "cmd/oneword-domains-pp-cli/main.go": "5806299e09feac2850a20c82da531206c2371f7ae5cb0def06c992d009b1f0eb",
     "cmd/oneword-domains-pp-mcp/http_auth_test.go": "5fec68bcaca2e4e592c3684d8f91eb18d2dd76c530acc460eae33ef187f7c0f5",
@@ -39,7 +39,7 @@
     "internal/cli/domains_search.go": "7e7ddf02126a553ac583f6ba9f90cb1481108a1f3f2fc7693c25a689bb787ee9",
     "internal/cli/export.go": "fd5e73e6605e487e7a606372de0f8101d241a716cf2f62c4811591f370311514",
     "internal/cli/feedback.go": "bca38c8c0a7e42cee47d4b7eb41fd9472f1c20ad9170a61d1b29fe8c26e30de5",
-    "internal/cli/gpt.go": "3aa285026c9e474b65e30ccbca76c64ddaf68a27a0671a2890fb82e62ae10d88",
+    "internal/cli/gpt.go": "f8f6af95cb4be1a99fe2606b1951fe883bcabf474c99c509db5a7f4458c29682",
     "internal/cli/gpt_saves.go": "dc4bcf38c673b4ba4446f413c012b11b5963d60e87cccc87d23941565aa8234f",
     "internal/cli/gpt_usage.go": "37894f0f649065a5fd783863846acd920bacf02c1799bef036919f7c448ebbf1",
     "internal/cli/helpers.go": "a4c32318526a09f79db8091ee9a36b9e31e8b0cd48e8b94ec5011889b70b0ae2",
@@ -70,8 +70,8 @@
     "internal/cli/owd_gpt_helpers.go": "26c33188448cc24c8d1079f9f49ad385905da4bf032d396f8a9cebeaaaf9314f",
     "internal/cli/owd_hacks.go": "7fd71cfd206e8d5293c4e649871bbf8dcfa255b0e074c0f4c666b01bfae628c9",
     "internal/cli/owd_hacks_test.go": "abca6c6096cab801795aedefbbd982e695896c4c73363d05fc509678de7b459a",
-    "internal/cli/owd_helpers.go": "f91e27e6c3ebc19b66062d44b22313aa59f9475b4063bf5311bf347270702842",
-    "internal/cli/owd_helpers_test.go": "e8e3b5e87537f2bca0f6113175e79f27c564b032a0102e04050b8bc69c90fd15",
+    "internal/cli/owd_helpers.go": "2dee8f9042f68cbc965e2965188e5701ce2a43abee4e08224a78d61a05fd218b",
+    "internal/cli/owd_helpers_test.go": "76d22fa4ca8a091a87a89314e600c37cbc884693c527004624b4591d292b45a7",
     "internal/cli/owd_listings_rank_helpers.go": "f97ebad2ca512fc6934a1b1e1e7592600f1dbc26397475cd6ba7a17fc53d45a5",
     "internal/cli/owd_listings_watch.go": "9dcd0796b8722067039b3c707707f8f74bf6dddbec407bf4da8091ebabc562ca",
     "internal/cli/owd_listings_watch_test.go": "ce52d1fd489a6490db081c84ce9b43d6dfaa0b4a176bac151a3a2774972610f6",
